@@ -19,6 +19,7 @@ int main() {
   auto material_met_g = make_shared<metallic>(colour(0.6, 1, 0.6));
   auto material_met_b = make_shared<metallic>(colour(0.6, 0.6, 1));
 
+  //Create a world to render
   hittable_list world;
   world.add(make_shared<sphere>(point3( 0.0, -100.5, -1.0), 100.0, material_d_g));
   world.add(make_shared<sphere>(point3( 0.0,    0.0, -1.0),   0.5, material_d_b));
